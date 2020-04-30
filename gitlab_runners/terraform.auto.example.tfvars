@@ -1,0 +1,5 @@
+cloudflare_prod_email = "accounts-infra@fakerco.cz"
+cloudflare_prod_token = "xxx"
+digitalocean_prod_token = "xxx"
+gitlab_token = "xxx"
+gitlab_base_url = "https://gitlab.example.com"
