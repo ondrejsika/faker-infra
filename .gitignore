@@ -1,0 +1,20 @@
+# General
+*.backup
+
+# Mac
+.DS_Store
+
+# Terraform
+.terraform
+*.tfstate*
+*.tfvars
+*.tfplan
+!*.example.tfvars
+
+# Kubernetes
+kubeconfig
+
+# RKE
+cluster.yml
+cluster.rkestate
+kube_config_cluster.yml
