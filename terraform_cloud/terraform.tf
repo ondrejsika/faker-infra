@@ -14,3 +14,9 @@ resource "tfe_workspace" "gitlab_vm" {
   name         = "gitlab_vm"
   operations   = false
 }
+
+resource "tfe_workspace" "gitlab" {
+  organization = tfe_organization.faker.name
+  name         = "gitlab"
+  operations   = false
+}
