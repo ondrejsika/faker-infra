@@ -20,3 +20,9 @@ resource "tfe_workspace" "gitlab" {
   name         = "gitlab"
   operations   = false
 }
+
+resource "tfe_workspace" "gitlab_runners" {
+  organization = tfe_organization.faker.name
+  name         = "runners"
+  operations   = false
+}
