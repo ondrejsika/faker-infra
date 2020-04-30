@@ -26,3 +26,21 @@ resource "tfe_workspace" "gitlab_runners" {
   name         = "runners"
   operations   = false
 }
+
+resource "tfe_workspace" "racher_server" {
+  organization = tfe_organization.faker.name
+  name         = "rancher_server"
+  operations   = false
+}
+
+resource "tfe_workspace" "racher_bootstrap" {
+  organization = tfe_organization.faker.name
+  name         = "rancher_bootstrap"
+  operations   = false
+}
+
+resource "tfe_workspace" "racher" {
+  organization = tfe_organization.faker.name
+  name         = "rancher"
+  operations   = false
+}
