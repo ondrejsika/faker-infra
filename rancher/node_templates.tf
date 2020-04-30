@@ -10,7 +10,7 @@ resource "rancher2_node_template" "do-prod-2vcpu-4gb" {
 }
 
 resource "rancher2_node_template" "do-prod-4vcpu-8gb" {
-  name = "do-prod-2vcpu-4gb"
+  name = "do-prod-4vcpu-8gb"
   cloud_credential_id = rancher2_cloud_credential.do-prod.id
   digitalocean_config {
     image = "rancheros"
