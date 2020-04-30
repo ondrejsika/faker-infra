@@ -9,9 +9,9 @@ resource "tfe_workspace" "core" {
   operations   = false
 }
 
-resource "tfe_workspace" "gitlab_vm" {
+resource "tfe_workspace" "gitlab_server" {
   organization = tfe_organization.faker.name
-  name         = "gitlab_vm"
+  name         = "gitlab_server"
   operations   = false
 }
 

@@ -3,7 +3,7 @@ terraform {
     hostname = "app.terraform.io"
     organization = "faker"
     workspaces {
-      name = "gitlab_vm"
+      name = "gitlab_server"
     }
   }
 }
