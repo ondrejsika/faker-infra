@@ -44,3 +44,9 @@ resource "tfe_workspace" "racher" {
   name         = "rancher"
   operations   = false
 }
+
+resource "tfe_workspace" "clusters" {
+  organization = tfe_organization.faker.name
+  name         = "clusters"
+  operations   = false
+}
