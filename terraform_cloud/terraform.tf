@@ -50,3 +50,9 @@ resource "tfe_workspace" "clusters" {
   name         = "clusters"
   operations   = false
 }
+
+resource "tfe_workspace" "gitlab_clusters" {
+  organization = tfe_organization.faker.name
+  name         = "gitlab_clusters"
+  operations   = false
+}
