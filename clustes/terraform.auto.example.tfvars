@@ -1,2 +1,5 @@
 rancher_api_url = "https://rancher.example.com"
 rancher_token_key = "xxx"
+cloudflare_prod_email="xxx"
+cloudflare_prod_token="xxx"
+digitalocean_prod_token = "xxx"
