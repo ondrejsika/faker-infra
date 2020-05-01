@@ -17,9 +17,11 @@ resource "digitalocean_droplet" "gitlab" {
 
   provisioner "remote-exec" {
     inline = [
-      "apt-get update",
-      "apt-get install -y curl sudo",
-      "curl -fsSL https://ins.oxs.cz/gitlab.sh | sudo sh",
+      "export DEBIAN_FRONTEND=noninteractive",
+      "apt-get -qq update",
+      "apt-get install -yqq sudo curl openssh-server ca-certificates",
+      "curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash",
+      "apt-get install gitlab-ee",
     ]
   }
 }
